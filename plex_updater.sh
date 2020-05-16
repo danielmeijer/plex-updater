@@ -23,7 +23,7 @@ wget $PLEX_URL -O $TMP_DEB
 if [ `whoami` = root ] 
 then
     echo "Installing/Updating..."
-    dkpg -i $TMP_DEB
+    dpkg -i $TMP_DEB
 else
     echo "Are you root?"
     echo "To install manually execute: dkpg -i $TMP_DEB"
